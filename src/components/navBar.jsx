@@ -1,8 +1,8 @@
 import "./navBar.css"
-//import Weather from"./weather.jsx"
+//import GeoFind from"./weather.jsx"
 
 const NavBar = () =>{
-    // console.log ("Your current position is :"+ <Weather/>);
+     //console.log ("Your current position is :"+ <GeoFind/>);
     return(
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">

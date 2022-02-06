@@ -1,4 +1,5 @@
 import {useState} from "react";
+import "./about.css"
 
 const About = ()=>{
     const [name,setName]= useState("");
@@ -31,7 +32,7 @@ const About = ()=>{
     return (
         <div className="about-page">
             {getMyInfo()}
-            <button onClick={handleShowName}>About</button>
+            <button className="btn btn-primary btn-sm" onClick={handleShowName}>About</button>
         </div>
     );
 };
