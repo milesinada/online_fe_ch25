@@ -26,11 +26,11 @@ useEffect(() => {
     return(
         <div className="catalog">
             <h3>Our Amazing Catalog</h3>
-            <h5>There are {products.length} products</h5>
+            <h5>There are {products.length} usurious products</h5>
 
             {products.map((p) => (
             <Product key={p._id} data={p} />) 
-            )};  
+            )}  
             
             
 

@@ -2,7 +2,7 @@ import {useState} from "react";
 import "./quantityPicker.css";
 import Product from "./product.jsx";
 
-const QuantityPicker = ()=>{
+const QuantityPicker = (props)=>{
 
     let[quantity, setQuantity] = useState(1);
 
@@ -13,6 +13,7 @@ const QuantityPicker = ()=>{
         let value = quantity + 1;
         setQuantity(value);  //ooooor setQuantity(quantity + 1)
         //setQuantity(100)
+        props.onChange(value); //call the fn from the parent
     };
 
     const handleDecrease = () =>{
@@ -20,6 +21,7 @@ const QuantityPicker = ()=>{
         if ( value>0) {
          setQuantity(value) 
          console.log("We're losing them!")
+         props.onChange(value);
         };
        
     };

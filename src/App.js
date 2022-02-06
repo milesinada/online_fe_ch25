@@ -2,6 +2,8 @@ import "./App.css";
 import NavBar from "./components/navBar";
 import Thanks from "./components/footer";
 import Catalog from "./components/catalog";
+import About from "./components/about";
+import ToDo from "./components/todo";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
@@ -13,10 +15,14 @@ function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
+
+      <About/>
       <h1>Welcome to my Super Online Store</h1>
 
       <Catalog/>
 
+      <ToDo/>
+      
       <Thanks />
     </div>
 
