@@ -2,6 +2,8 @@ import {useEffect, useState} from "react";
 import "./catalog.css"
 import Product from "./product"
 import DataService from "../services/dataService";
+import ToDo from "./todo";
+
 
 const Catalog = ()=>{
     const [products, setProducts] = useState([]);
@@ -31,7 +33,7 @@ useEffect(() => {
             {products.map((p) => (
             <Product key={p._id} data={p} />) 
             )}  
-            
+            <ToDo></ToDo>
             
 
         </div>
