@@ -22,7 +22,7 @@ const Product = (props) => {
       ...props.data,
       quantity: quantity,
     };
-    addProductToCart(props.data);
+    addProductToCart(prodToCart);
   };
   return (
     <div className="product">
