@@ -8,16 +8,16 @@ const Catalog = () => {
   const [products, setProducts] = useState([]);
 
   //load data function
-  const loadData = () => {
+  const loadData = async () => {
     let service = new DataService();
-    let data = service.getCatalog();
+    let data = await service.getCatalog();
     setProducts(data);
   };
 
   //when the component loads
   useEffect(() => {
     loadData();
-  });
+  }, []);
 
   /**
    * create state variable (products)
