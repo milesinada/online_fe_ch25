@@ -2,7 +2,7 @@ import "./navBar.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import storeContext from "../store/storecontext";
-//import GeoFind from"./weather.jsx"
+import Weather from "./weather.jsx";
 
 const NavBar = () => {
   //console.log ("Your current position is :"+ <GeoFind/>);
@@ -48,6 +48,7 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
+          <Weather />
           <form className="d-flex">
             <Link
               className="btn btn-outline-light position-relative view-cart"

@@ -25,7 +25,7 @@ const CartItem = (props) => {
           <label className="cart-qnty">{props.data.quantity}</label>
           <h6>Total Price</h6>
           <label className="cart-total">
-            ${props.data.price * props.data.quantity}
+            ${(props.data.price * props.data.quantity).toFixed(2)}
           </label>
         </div>
         <button onClick={removeFromCart} className="btn btn-danger">
